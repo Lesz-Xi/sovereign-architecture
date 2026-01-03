@@ -60,17 +60,17 @@ Traditional HIV therapeutics exhibit three fundamental vulnerabilities:
 
 \textbf{Functional Redundancy.} Blocking essential viral functions (RT, protease, integrase) fails because compensatory mutations restore function via alternate pathways. Biology evolves multiple solutions to the same functional problem.
 
-\textbf{Incomplete Viral Suppression.} Reducing viral load to ``undetectable'' levels ($<$50 copies/mL) leaves $10^6$--$10^7$ latently infected cells that persist for decades \citep{Hosmane2017}. The detection threshold is a measurement limit, not a biological reality.
+\textbf{Incomplete Viral Suppression.} Reducing viral load to ``undetectable'' levels ($<$50 copies/mL) leaves $10^6$--$10^7$ latently infected cells that persist for decades \citep{Hosmane2017JEM}. The detection threshold is a measurement limit, not a biological reality.
 
 \subsection{Physics-Based Targeting: A New Paradigm}
 
 We propose an alternative framework grounded in physical law: \textit{target the constraints, not the products}. Rather than chasing evolving sequences, we identify regions where thermodynamic constraints prohibit mutation entirely.
 
-\textbf{Innovation 1: Immutability Through Energetic Constraints.} Traditional biology identifies conserved sequences through alignment, where conservation score equals frequency of consensus residue. However, conservation $\neq$ immutability---conserved regions \textit{do} mutate. Physics-based approach quantifies the \textit{energetic cost} of mutation \citep{Wylie2011, Gong2013}. Shannon entropy $H = -\sum p(x) \log_2 p(x)$ measures sequence variability. Regions with $H = 0.0$ bits have zero observed variation across all sequenced isolates---mutations in these regions are thermodynamically forbidden.
+\textbf{Innovation 1: Immutability Through Energetic Constraints.} Traditional biology identifies conserved sequences through alignment, where conservation score equals frequency of consensus residue. However, conservation $\neq$ immutability---conserved regions \textit{do} mutate. Physics-based approach quantifies the \textit{energetic cost} of mutation \citep{Wylie2011PNAS, Gong2013eLife}. Shannon entropy $H = -\sum p(x) \log_2 p(x)$ measures sequence variability. Regions with $H = 0.0$ bits have zero observed variation across all sequenced isolates---mutations in these regions are thermodynamically forbidden.
 
 \textbf{Innovation 2: Adversarial Prediction.} Traditional vaccine development is retrospective (virus mutates $\rightarrow$ strain identified $\rightarrow$ vaccine designed $\rightarrow$ virus evolved further). Our TC-GAN approach is prospective: generate synthetic variants constrained by physical laws before they emerge naturally.
 
-\textbf{Innovation 3: Active Detection.} Traditional latency measurement is passive (QVOA requires 2--3 weeks, underestimates reservoir by 60-fold) \citep{Ho2013, Siliciano2022}. Our Sentinel Cell approach provides real-time detection of viral reactivation.
+\textbf{Innovation 3: Active Detection.} Traditional latency measurement is passive (QVOA requires 2--3 weeks, underestimates reservoir by 60-fold) \citep{Ho2013Cell, Siliciano2022AnnuRevPathol}. Our Sentinel Cell approach provides real-time detection of viral reactivation.
 
 % ===== 2. METHODS =====
 \section{Methods}
@@ -198,7 +198,7 @@ We present the Entropic Vise, a physics-based framework for HIV-1 eradication co
 
 % ===== ACKNOWLEDGMENTS =====
 \section*{Acknowledgments}
-[Add acknowledgments here]
+This work was supported by the Department of Computer Science at Mapúa Malayan Colleges Mindanao. We thank the computer science faculty for their guidance and support in the development of the computational frameworks presented in this proposal.
 
 % ===== CODE AVAILABILITY =====
 \section*{Code and Data Availability}
