@@ -4,13 +4,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![LaTeX](https://img.shields.io/badge/LaTeX-NIH_R01-green.svg)](proposals/main.tex)
+[![LaTeX](https://img.shields.io/badge/Preprint-Zenodo-blue.svg)](proposals/arxiv_preprint.tex)
 
 ---
 
 ## Overview
 
-This repository contains the source code, computational analysis, and NIH R01 grant proposal for a physics-based approach to HIV-1 eradication. Unlike traditional biological targeting that fails due to viral mutation, this framework exploits **thermodynamic constraints**—regions where any mutation is physically lethal to the virus.
+This repository contains the source code, computational analysis, and research preprint for a physics-based approach to HIV-1 eradication. Unlike traditional biological targeting that fails due to viral mutation, this framework exploits **thermodynamic constraints**—regions where any mutation is physically lethal to the virus.
 
 ### The Core Discovery: The Entropic Vise
 
@@ -37,8 +37,9 @@ This repository contains the source code, computational analysis, and NIH R01 gr
 - `Zero_Trust_Feasibility.md` — Literature validation of biosensor implants
 
 ### 4. Proposals (`/proposals`)
-**Objective:** NIH R01 grant application materials.
-- `main.tex` — Complete LaTeX proposal (ready for Overleaf)
+**Objective:** Research Preprint and Theoretical Framework.
+- `arxiv_preprint.tex` — Final Preprint (Submitted to Zenodo)
+- `main.tex` — Original NIH-style draft (reference only)
 - `references.bib` — BibTeX bibliography (17 citations)
 - `image.png` — Entropy analysis figure
 
@@ -51,8 +52,8 @@ This repository contains the source code, computational analysis, and NIH R01 gr
 python3 2_the_oracle/models/TC_GAN_Prototype.py
 ```
 
-### Compile the NIH Proposal
-Upload `proposals/main.tex` and `proposals/references.bib` to [Overleaf](https://overleaf.com) and compile with **pdfLaTeX + Biber**.
+### Compile the Preprint
+Upload `proposals/arxiv_preprint.tex` and `proposals/references.bib` to [Overleaf](https://overleaf.com) and compile with **pdfLaTeX**.
 
 ---
 
@@ -74,7 +75,8 @@ See [`proposals/references.bib`](proposals/references.bib) for the complete cita
 | Entropy Analysis | ✅ Complete |
 | TC-GAN Prototype | 🔄 In Development |
 | Sentinel Cell Design | 📋 Conceptual |
-| NIH R01 Proposal | ✅ Complete |
+| Project Status | ✅ Complete |
+| Research Preprint | 🚀 Published (Zenodo) |
 
 ---
 
