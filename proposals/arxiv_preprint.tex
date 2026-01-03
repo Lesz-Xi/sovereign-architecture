@@ -66,7 +66,8 @@ Traditional HIV therapeutics exhibit three fundamental vulnerabilities:
 
 We propose an alternative framework grounded in physical law: \textit{target the constraints, not the products}. Rather than chasing evolving sequences, we identify regions where thermodynamic constraints prohibit mutation entirely.
 
-\textbf{Innovation 1: Immutability Through Energetic Constraints.} Traditional biology identifies conserved sequences through alignment, where conservation score equals frequency of consensus residue. However, conservation $\neq$ immutability---conserved regions \textit{do} mutate. Physics-based approach quantifies the \textit{energetic cost} of mutation \citep{Wylie2011PNAS, Gong2013eLife}. Shannon entropy $H = -\sum p(x) \log_2 p(x)$ measures sequence variability. Regions with $H = 0.0$ bits have zero observed variation across all sequenced isolates---mutations in these regions are thermodynamically forbidden.
+\textbf{Innovation 1: Immutability Through Energetic Constraints.} Traditional biology identifies conserved sequences through alignment, where conservation score equals frequency of consensus residue. However, conservation $\neq$ immutability---conserved regions \textit{do} mutate. Physics-based approach quantifies the \textit{energetic cost} of mutation \citep{Wylie2011PNAS, Gong2013eLife}. Similar thermodynamic constraints have been shown to govern evolutionary limits in other families such as influenza \citep{Klein2018mSphere} and bacteriophages \citep{Redondo2017JRoySocInterface, Zeldovich2007PNAS}.
+Shannon entropy $H = -\sum p(x) \log_2 p(x)$ measures sequence variability. Regions with $H = 0.0$ bits have zero observed variation across all sequenced isolates---mutations in these regions are thermodynamically forbidden.
 
 \textbf{Innovation 2: Adversarial Prediction.} Traditional vaccine development is retrospective (virus mutates $\rightarrow$ strain identified $\rightarrow$ vaccine designed $\rightarrow$ virus evolved further). Our TC-GAN approach is prospective: generate synthetic variants constrained by physical laws before they emerge naturally.
 
@@ -93,7 +94,7 @@ The gp41 HR1 domain (residues 568--576) forms the six-helix bundle essential for
 \subsubsection{Therapeutic Strategy}
 Engineer aptamer-protease chimeras (``molecular scissors'') that:
 \begin{enumerate}[leftmargin=*]
-\item Recognize HR1 via high-affinity aptamer binding ($K_d < 5$ nM)
+\item Recognize HR1 via high-affinity aptamer binding ($K_d < 5$ nM), leveraging the established efficacy of RNA aptamers for HIV-1 inhibition and targeted delivery \citep{Neff2011SciTranslMed, Zhou2008MolTher, Zhou2013MolTher, Zhou2015ChemBiol, Duclair2015MTNA, Lange2017NAR, Shum2013Pharmaceuticals, Chakraborty2022ACSInfectDis}
 \item Deliver HIV-1 protease payload for targeted Env cleavage
 \item Achieve irreversible inactivation with no escape pathway
 \end{enumerate}
