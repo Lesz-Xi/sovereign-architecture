@@ -10,30 +10,30 @@
 
 ## Overview
 
-This repository contains the source code, computational analysis, and research preprint for a physics-based approach to HIV-1 eradication. Unlike traditional biological targeting that fails due to viral mutation, this framework exploits **thermodynamic constraints**—regions where any mutation is physically lethal to the virus.
+This repository contains the source code, computational analysis, and research preprint for a physics-based approach to HIV-1 eradication. Unlike traditional biological targeting that fails due to viral mutation, this framework exploits **high-barrier thermodynamic constraints**—regions where mutations impose severe fitness costs on the virus.
 
 ### The Core Discovery: The Entropic Vise
 
-**Shannon entropy analysis of 3,552+ HIV-1 envelope sequences reveals a "thermodynamic dead zone" in the gp41 HR1 domain (residues 568-576) with H = 0.0 bits**—meaning ZERO observed variation across 40 years of global evolution. This region cannot mutate without catastrophic loss of viral fitness.
+**Shannon entropy analysis of 3,552+ HIV-1 envelope sequences reveals a high-barrier region in the gp41 HR1 domain (HXB2 residues 546-556, sequence SGIVQQQNNLL) with near-zero entropy**—indicating strong purifying selection across 40 years of global evolution. While resistance mutations (e.g., V38A, N43D) can emerge under selective pressure (as seen with Enfuvirtide), these mutants exhibit significant fitness costs.
 
 ---
 
 ## Repository Structure
 
 ### 1. The Trap (`/1_the_trap`)
-**Objective:** Identify and validate thermodynamically immutable regions.
+**Objective:** Identify and validate high-barrier thermodynamically constrained regions.
 - `core_algorithms/` — Python scripts for Shannon Entropy analysis and Gap Filtering
 - `visualization/` — PyMOL scripts for mapping "Dead Zones" to PDB:5FUU
 - `Entropic_Vise_Summary.md` — Discovery report on the HR1 "Vise"
 
 ### 2. The Oracle (`/2_the_oracle`)
 **Objective:** Predict future viral variants before they emerge.
-- `models/` — PyTorch prototypes for the **Thermodynamically Constrained GAN (TC-GAN)**
+- `models/` — Prototypes for thermodynamically constrained generative models (transitioning to diffusion-based architectures like RFdiffusion)
 - `Algorithmic_Immunity_Design.md` — Technical specification for the constrained architecture
 
 ### 3. The Watchman (`/3_the_watchman_designs`)
 **Objective:** Real-time detection of viral reactivation (Zero-Trust Bio-Forensics).
-- `designs/` — Conceptual frameworks for "Sentinel Cells" (Tat-responsive reporters)
+- `designs/` — Conceptual frameworks for "Sentinel Cells" with humanized reporters (ΔNGFR, Truncated CD19)
 - `Zero_Trust_Feasibility.md` — Literature validation of biosensor implants
 
 ### 4. Proposals (`/proposals`)
@@ -73,10 +73,10 @@ See [`proposals/references.bib`](proposals/references.bib) for the complete cita
 | Component | Status |
 |-----------|--------|
 | Entropy Analysis | ✅ Complete |
-| TC-GAN Prototype | 🔄 In Development |
-| Sentinel Cell Design | 📋 Conceptual |
-| Project Status | ✅ Complete |
-| Research Preprint | 🚀 Published (Zenodo) |
+| Generative Models | 🔄 Transitioning to Diffusion |
+| Sentinel Cell Design | 📋 Conceptual (ΔNGFR reporters) |
+| Research Preprint v2 | 🚀 Published (Zenodo) |
+| External Validation | ✅ Confirmed (Consensus.app + Gemini) |
 
 ---
 
